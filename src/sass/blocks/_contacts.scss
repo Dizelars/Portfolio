@@ -1,143 +1,144 @@
 .contacts {
-    padding: 120px 0 90px 0;
-    &__wrapper {
-        padding: 0 35px 0 52px;
-        display: grid;
-        grid-template-columns: 400px 585px;
-        justify-content: space-between;
+  padding: 120px 0 90px 0;
+  &__wrapper {
+    padding: 0 35px 0 52px;
+    display: grid;
+    grid-template-columns: 400px 585px;
+    justify-content: space-between;
+  }
+  &__photo {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    &__photo {
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+  }
+  &__descr {
+    padding-top: 6px;
+    .divider {
+      margin: 0;
     }
-    &__descr {
-        padding-top: 6px;
-        .divider {
-            margin: 0;
-        }
+  }
+  &__title {
+    position: relative;
+    padding: 1px 0 0 12px;
+    @include before_circle;
+  }
+  &__text,
+  &__social {
+    margin-top: 20px;
+  }
+  &__link {
+    margin-right: 25px;
+    &:last-child {
+      margin-right: 0;
     }
-    &__title {
-        position: relative;
-        padding: 1px 0 0 12px;
-        @include before_circle;
+    img {
+      max-width: 30px;
+      max-height: 30px;
     }
-    &__text, &__social {
-        margin-top: 20px;
+    svg {
+      &:hover #vk_contacts {
+        fill: #597da3;
+      }
+      &:hover #telegram_contacts {
+        fill: #0088cc;
+      }
+      &:hover #whatsapp_contacts {
+        fill: #43d854;
+      }
+      &:hover #mail_contacts {
+        fill: #fc2c38;
+      }
+      &:hover #phone_contacts {
+        fill: #7b68ee;
+      }
+      &:hover #phone_contacts-2,
+      &:hover #phone_contacts-3 {
+        fill: #228b22;
+      }
     }
-    &__link {
-        margin-right: 25px;
-        &:last-child {
-            margin-right: 0;
-        }
-        img {
-            max-width: 30px;
-            max-height: 30px;
-        }
-        svg {
-            &:hover #vk_contacts {
-                fill: #597da3;
-            }
-            &:hover #telegram_contacts {
-                fill: #0088cc;
-            }
-            &:hover #whatsapp_contacts {
-                fill: #43d854;
-            }
-            &:hover #mail_contacts {
-                fill: #fc2c38;
-            }
-            &:hover #phone_contacts {
-                fill: #7B68EE;
-            }
-            &:hover #phone_contacts-2,
-            &:hover #phone_contacts-3{
-                fill: #228B22;
-            }
-        }
-        &:hover {
-            text-decoration: none;
-        }
+    &:hover {
+      text-decoration: none;
     }
-    &__form {
-        margin-top: 30px;
-        display: grid;
-        grid-template: 45px 190px 45px / repeat(2, 280px);
-        justify-content: space-between;
-        row-gap: 27px;
-        label {
-            display: block;
-            position: absolute;
-            top: -9px;
-            left: 12px;
-            height: 18px;
-            padding: 0 8px;
-            background-color: #fff;
-            font-size: 12px;
-            margin-bottom: 0;
-            &.error {
-                border: none;
-                top: 46px;
-                text-align: center;
-                font-weight: bold;
-            }
-        }
-        .error {
-            border: 1px solid red;
-        }
-    }
-    &__triggers {
-        grid-column: 1 / 3;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        column-gap: 35px;
-    }
-    &__policy {
-        font-size: 12px;
-        line-height: 14px;
-        display: flex;
-        align-items: center;
-        input {
-            margin-right: 10px;
-        }
-        label {
-            &.error {
-                position: relative;
-                padding: 0;
-                width: 0;
-                height: 0;
-                top: 15px;
-                left: 0;
-                color: red;
-            }
-        }
-    }
-    &__input {
-        position: relative;
-        input {
-            width: 100%;
-            height: 100%;
-            padding: 0 20px;
-            font-size: 12px;
-        }
-    }
-    &__textarea {
-        position: relative;
-        grid-column: 1 / 3;
-        textarea {
-            width: 100%;
-            height: 100%;
-            resize: none;
-            padding: 20px;
-            font-size: 12px;
-        }
-    }
-    &__btn {
+  }
+  &__form {
+    margin-top: 30px;
+    display: grid;
+    grid-template: 45px 190px 45px / repeat(2, 280px);
+    justify-content: space-between;
+    row-gap: 27px;
+    label {
+      display: block;
+      position: absolute;
+      top: -9px;
+      left: 12px;
+      height: 18px;
+      padding: 0 8px;
+      background-color: #fff;
+      font-size: 12px;
+      margin-bottom: 0;
+      &.error {
         border: none;
+        top: 46px;
+        text-align: center;
         font-weight: bold;
-        font-size: 14px;
-        line-height: 21px;
+      }
     }
+    .error {
+      border: 1px solid red;
+    }
+  }
+  &__triggers {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 35px;
+  }
+  &__privacy {
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    input {
+      margin-right: 10px;
+    }
+    label {
+      &.error {
+        position: relative;
+        padding: 0;
+        width: 0;
+        height: 0;
+        top: 15px;
+        left: 0;
+        color: red;
+      }
+    }
+  }
+  &__input {
+    position: relative;
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 0 20px;
+      font-size: 12px;
+    }
+  }
+  &__textarea {
+    position: relative;
+    grid-column: 1 / 3;
+    textarea {
+      width: 100%;
+      height: 100%;
+      resize: none;
+      padding: 20px;
+      font-size: 12px;
+    }
+  }
+  &__btn {
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }

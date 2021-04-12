@@ -1202,12 +1202,12 @@ p {
 }
 
 .contacts__link svg:hover #phone_contacts {
-  fill: #7B68EE;
+  fill: #7b68ee;
 }
 
 .contacts__link svg:hover #phone_contacts-2,
 .contacts__link svg:hover #phone_contacts-3 {
-  fill: #228B22;
+  fill: #228b22;
 }
 
 .contacts__link:hover {
@@ -1262,7 +1262,7 @@ p {
           column-gap: 35px;
 }
 
-.contacts__policy {
+.contacts__privacy {
   font-size: 12px;
   line-height: 14px;
   display: -webkit-box;
@@ -1273,11 +1273,11 @@ p {
           align-items: center;
 }
 
-.contacts__policy input {
+.contacts__privacy input {
   margin-right: 10px;
 }
 
-.contacts__policy label.error {
+.contacts__privacy label.error {
   position: relative;
   padding: 0;
   width: 0;
@@ -1726,7 +1726,7 @@ p {
     max-width: 220px;
     margin: 0 auto;
   }
-  .contacts__policy {
+  .contacts__privacy {
     width: 180px;
     margin: 0 auto;
     line-height: 18px;

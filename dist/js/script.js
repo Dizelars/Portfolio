@@ -56,7 +56,7 @@ $(document).ready(function(){
                     required: true,
                     email: true
                 },
-                policy: "required"
+                privacy: "required"
             },
             messages: {
                 name: "Введите свое имя!",
@@ -64,7 +64,7 @@ $(document).ready(function(){
                     required: "Введите свою почту!",
                     email: "Неверный адрес почты!"
                 },
-                policy: "Важно!"
+                privacy: "Важно!"
             }
         });
     }
